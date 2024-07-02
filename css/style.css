@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-input {
+.input_registration {
     width: 300px;
     height: 40px;
     margin-top: 16px;
@@ -14,7 +14,7 @@ input {
 
 }
 
-input::placeholder {
+.input_registration::placeholder {
     font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -22,7 +22,7 @@ input::placeholder {
     color: #a5a5a5;
 }
 
-a {
+.registration_a {
     font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 13px;
@@ -32,7 +32,7 @@ a {
     text-decoration: none;
 }
 
-.loginLinks {
+.login_links {
     width: 300px;
     height: 40px;
     border: 1px solid #eaeaea;
@@ -45,24 +45,27 @@ a {
 
 }
 
-.loginLinks:first-of-type {
+.login_links:first-of-type {
     margin-top: 27px;
     margin-bottom: 15px;
 }
 
-#regTitle {
+.reg_title {
     font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
     color: #3d3d3d;
+    margin-top: 36px;
+    margin-bottom: 27px;
+    margin-left: 100px;
 }
 
-span {
+.span_reg_title {
     color: #46a358;
 }
 
-button {
+.button_reg {
     background-color: #46a358;
     color: white;
     border-radius: 5px;
@@ -72,7 +75,7 @@ button {
     text-align: center;
 }
 
-button:hover {
+.button_reg:hover {
     transition: 0.5s;
     background-color: #55B267;
 }
@@ -84,24 +87,18 @@ button:hover {
 
 }
 
-.regTitle {
-    margin-top: 36px;
-    margin-bottom: 27px;
-    margin-left: 100px;
-}
-
-.textReg {
+.text_reg {
     margin-top: 40px;
     margin-bottom: 14px;
 }
 
-.chromeLogo {
+.chrome_logo {
     margin-right: 9px;
     height: 20px;
     width: 20px;
 }
 
-.facebookLogo {
+.facebook_logo {
     margin-right: 4px;
     height: 20px;
     width: 20px;
@@ -112,11 +109,7 @@ button:hover {
     margin: auto;
 }
 
-header {
-    padding-top: 31px;
-}
-
-.login_btn {
+.login_link_index {
     border-radius: 6px;
     background: #46a358;
     text-decoration: none;
@@ -124,6 +117,9 @@ header {
     justify-content: center;
     align-items: center;
     padding: 7px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
 }
 
 header .container {
@@ -132,7 +128,28 @@ header .container {
     align-items: center;
 }
 
+header {
+    padding-top: 31px;
+}
+
 header ul {
     display: flex;
     align-items: center;
 }
+
+.links_nav {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.links_nav:hover {
+    transition: 0.5s;
+    font-weight: 700;
+    color: #3d3d3d;
+    border-bottom: #46a358;
+}
+
