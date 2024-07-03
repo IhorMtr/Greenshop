@@ -143,9 +143,8 @@ header ul {
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
-    margin-right: 50px;
-}
 
+}
 .links_nav:hover {
     transition: 0.2s;
     font-weight: 700;
@@ -154,4 +153,7 @@ header ul {
 }
 .logout_img{
     margin-right: 1px;
+}
+.links_nav_li{
+    margin-right: 50px;
 }
