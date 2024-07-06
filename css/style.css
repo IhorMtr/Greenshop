@@ -340,12 +340,14 @@ header ul {
 
 .catalog {
     margin-top: 171px;
+    max-width: 1200px;
 }
 
 .catalog div:first-of-type {
     background: #fbfbfb;
     width: 310px;
     height: 774px;
+    padding-top: 14px;
 }
 
 .catalog h3:first-of-type {
@@ -354,7 +356,7 @@ header ul {
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
-    margin: 14px 0 7px 18px;
+    margin: 0 0 7px 18px;
 }
 
 .catalog ul *:active {
