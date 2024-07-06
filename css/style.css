@@ -232,15 +232,17 @@ header ul {
     align-items: center;
 }
 
-.links_nav {
+.links_nav_ul * {
     font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
+    text-align: center;
 }
 
-.links_nav:hover {
+
+.links_nav_ul *:hover {
     transition: 0.2s;
     font-weight: 700;
     color: #3d3d3d;
@@ -266,7 +268,6 @@ header ul {
 
 .welcome_info {
     max-width: 693px;
-
     flex: 1;
 }
 
@@ -296,11 +297,11 @@ header ul {
     margin-left: 40px;
 }
 
-.welcome_info h3 {
+.welcome_info h2 {
     margin-left: 43px;
 }
 
-.welcome_info h3:first-of-type {
+.welcome_info h2:first-of-type {
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
@@ -311,7 +312,7 @@ header ul {
     font-family: 'cera_round_pro_demomedium';
 }
 
-.welcome_info h3:nth-of-type(2) {
+.welcome_info h2:nth-of-type(2) {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -337,5 +338,42 @@ header ul {
     font-family: 'cera_round_pro_demobold';
 }
 
+.catalog {
+    margin-top: 171px;
+}
+
+.catalog div:first-of-type {
+    background: #fbfbfb;
+    width: 310px;
+    height: 774px;
+}
+
+.catalog h3:first-of-type {
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin: 14px 0 7px 18px;
+}
+
+.catalog ul *:active {
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    color: #46a358;
+
+}
+
+.catalog ul * {
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    color: #3d3d3d;
+    text-decoration: none;
+    line-height: 267%;
+}
+
+.catalog ul {
+    margin-left: 30px;
+}
 
 
