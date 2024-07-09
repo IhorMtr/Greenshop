@@ -254,7 +254,7 @@ header ul {
     gap: 50px;
 }
 
-.container_main {
+main {
     max-width: 1200px;
     margin: 12px auto auto;
 }
