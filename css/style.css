@@ -403,7 +403,6 @@ main {
 .catalog_second_block {
     max-width: 890px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -468,18 +467,19 @@ main {
     margin-left: 5px;
 }
 
-.cards_of_items div {
-    width: 258px;
-    height: 350px;
-}
-
 .cards_of_items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 840px;
-    gap: 10px;
+    gap: 33px;
 }
+
+.cards_of_items div {
+    width: 258px;
+    height: 350px;
+}
+
 
 .cards_of_items div div {
     height: 300px;
