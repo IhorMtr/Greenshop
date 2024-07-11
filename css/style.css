@@ -405,7 +405,6 @@ main {
     max-width: 840px;
     display: flex;
     flex-wrap: wrap;
-    height: 1369px;
 }
 
 .catalog_second_block_head {
@@ -418,11 +417,17 @@ main {
 
 .catalog_second_block_head ul {
     display: flex;
-    align-items: center;
+    list-style: none;
     gap: 38px;
 }
 
-.catalog_second_block_head ul * {
+.catalog_second_block_head ul li {
+    min-width: 88px;
+    text-align: center;
+}
+
+.catalog_second_block_head ul li * {
+    text-decoration: none;
     font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
     font-size: 15px;
@@ -430,25 +435,16 @@ main {
     color: #3d3d3d;
 }
 
-.catalog_second_block_head ul *:hover {
+.catalog_second_block_head ul li *:hover {
     font-family: 'cera_round_pro_demobold';
     font-weight: 700;
     font-size: 15px;
     line-height: 107%;
     color: #46a358;
+    padding-bottom: 7px;
+    border-bottom: solid 2px #46a358;
 }
 
-.catalog_second_block_head ul li:first-of-type {
-    min-width: 66px;
-}
-
-.catalog_second_block_head ul li:nth-of-type(2) {
-    min-width: 88px;
-}
-
-.catalog_second_block_head ul li:nth-of-type(3) {
-    min-width: 29px;
-}
 
 .catalog_second_block_head p {
     font-family: 'cera_round_pro_demoregular';
@@ -474,17 +470,15 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 33px;
-    height: 1190px;
     margin-bottom: 0;
 }
 
-.cards_of_items div {
+.cards_of_items article {
     width: 258px;
     height: 350px;
 }
 
-
-.cards_of_items div div {
+.cards_of_items article div {
     height: 300px;
     background: #fbfbfb;
     display: flex;
@@ -492,7 +486,7 @@ main {
     justify-content: center;
 }
 
-.cards_of_items div p:first-of-type {
+.cards_of_items article p:first-of-type {
     font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
     font-size: 16px;
@@ -501,7 +495,7 @@ main {
     margin: 12px 0 6px 0;
 }
 
-.cards_of_items div p:nth-of-type(2) {
+.cards_of_items article p:nth-of-type(2) {
     font-family: 'cera_round_pro_demobold';
     font-weight: 700;
     font-size: 18px;
@@ -516,9 +510,9 @@ main {
 .catalog_second_block_links ul {
     display: flex;
     justify-content: space-between;
-    width: 215px;
     height: 35px;
     align-items: center;
+    gap: 10px;
 }
 
 .catalog_second_block_links li {
