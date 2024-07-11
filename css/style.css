@@ -360,6 +360,7 @@ main {
     margin-top: 26px;
     justify-content: space-between;
     gap: 50px;
+
 }
 
 .catalog_first_block {
@@ -401,7 +402,7 @@ main {
 }
 
 .catalog_second_block {
-    max-width: 890px;
+    max-width: 840px;
     display: flex;
     flex-wrap: wrap;
     height: 1369px;
