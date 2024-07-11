@@ -357,7 +357,7 @@ main {
 .catalog {
     display: flex;
     max-width: 1200px;
-    margin-top: 171px;
+    margin-top: 26px;
     justify-content: space-between;
     gap: 50px;
 }
@@ -404,6 +404,7 @@ main {
     max-width: 890px;
     display: flex;
     flex-wrap: wrap;
+    height: 1369px;
 }
 
 .catalog_second_block_head {
@@ -459,7 +460,7 @@ main {
 }
 
 .catalog_second_block_head p:after {
-    background-image: url("../images/Arrow - Down 2.svg");
+    background-image: url("../images/Arrow_Down_2.svg");
     display: inline-flex;
     width: 16px;
     height: 16px;
@@ -471,8 +472,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 840px;
     gap: 33px;
+    height: 1190px;
+    margin-bottom: 0;
 }
 
 .cards_of_items div {
@@ -489,4 +491,71 @@ main {
     justify-content: center;
 }
 
+.cards_of_items div p:first-of-type {
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    margin: 12px 0 6px 0;
+}
 
+.cards_of_items div p:nth-of-type(2) {
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+
+.catalog_second_block_links {
+    margin-left: auto;
+}
+
+.catalog_second_block_links ul {
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+    height: 35px;
+    align-items: center;
+}
+
+.catalog_second_block_links li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog_second_block_links li:hover {
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    background: #46a358;
+}
+
+.catalog_second_block_links li * {
+    font-family: 'cera_round_pro_demolight';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.catalog_second_block_links li:hover * {
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+}
+
+.catalog_second_block_links li img {
+    max-width: 16px;
+    max-height: 16px;
+    vertical-align: middle;
+}
