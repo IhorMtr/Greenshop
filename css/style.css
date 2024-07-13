@@ -532,6 +532,7 @@ main {
     background: #46a358;
 }
 
+/*убрать font-weight у штрифтов*/
 .catalog_second_block_links li * {
     font-family: 'cera_round_pro_demolight';
     font-weight: 300;
@@ -553,4 +554,11 @@ main {
     max-width: 16px;
     max-height: 16px;
     vertical-align: middle;
+
 }
+
+.container_third_section {
+    max-width: 1200px;
+    margin: auto;
+}
+
