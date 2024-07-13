@@ -649,9 +649,11 @@ main {
     margin: 138px auto auto;
     max-width: 1200px;
 }
-.blog{
+
+.blog {
     margin-bottom: 100px;
 }
+
 .container_blog_section h2:first-of-type {
     text-align: center;
     font-family: 'cera_round_pro_demobold';
