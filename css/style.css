@@ -95,7 +95,6 @@
 
 .input_registration::placeholder {
     font-family: "Cera Pro", sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 114%;
     color: #a5a5a5;
@@ -103,7 +102,6 @@
 
 .registration_a {
     font-family: "Cera Pro", sans-serif;
-    font-weight: 500;
     font-size: 13px;
     line-height: 123%;
     color: #727272;
@@ -131,7 +129,6 @@
 
 .reg_title {
     font-family: "Cera Pro", sans-serif;
-    font-weight: 400;
     font-size: 13px;
     line-height: 123%;
     color: #3d3d3d;
@@ -199,7 +196,6 @@
     justify-content: center;
     align-items: center;
     padding: 8px 17px 7px;
-    font-weight: 500;
     font-size: 16px;
     color: #fff;
     width: 100px;
@@ -214,7 +210,7 @@
     height: 20px;
     content: "";
     margin: 7px 4px 9px 0;
-
+    background-repeat: no-repeat;
 }
 
 header .container_header {
@@ -234,7 +230,6 @@ header ul {
 
 .links_nav_ul * {
     font-family: 'cera_round_pro_demoregular';
-    font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
@@ -260,7 +255,6 @@ header ul {
 
 .links_nav_ul *:hover {
     transition: 0.2s;
-    font-weight: 700;
     color: #3d3d3d;
     font-family: 'cera_round_pro_demobold';
 }
@@ -304,7 +298,6 @@ main {
 }
 
 .welcome_info h1 {
-    font-weight: 900;
     font-size: 70px;
     line-height: 100%;
     text-transform: uppercase;
@@ -318,7 +311,6 @@ main {
 }
 
 .welcome_info h2:first-of-type {
-    font-weight: 500;
     font-size: 14px;
     line-height: 114%;
     letter-spacing: 0.1em;
@@ -329,7 +321,6 @@ main {
 }
 
 .welcome_info h2:nth-of-type(2) {
-    font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
@@ -338,7 +329,6 @@ main {
 }
 
 .welcome_info a {
-    font-weight: 700;
     font-size: 16px;
     line-height: 125%;
     text-transform: uppercase;
@@ -376,7 +366,6 @@ main {
 .catalog_first_block div:first-of-type h3 {
     padding: 14px 0 7px 18px;
     font-family: 'cera_round_pro_demobold';
-    font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
@@ -389,7 +378,6 @@ main {
 
 .catalog_first_block div:first-of-type ul * {
     font-family: 'cera_round_pro_demoregular';
-    font-weight: 400;
     color: #3d3d3d;
     text-decoration: none;
     line-height: 267%;
@@ -397,7 +385,6 @@ main {
 
 .catalog_first_block div:first-of-type ul *:hover {
     font-family: 'cera_round_pro_demobold';
-    font-weight: 700;
     color: #46a358;
 }
 
@@ -429,7 +416,6 @@ main {
 .catalog_second_block_head ul li * {
     text-decoration: none;
     font-family: 'cera_round_pro_demoregular';
-    font-weight: 400;
     font-size: 15px;
     line-height: 107%;
     color: #3d3d3d;
@@ -437,7 +423,6 @@ main {
 
 .catalog_second_block_head ul li *:hover {
     font-family: 'cera_round_pro_demobold';
-    font-weight: 700;
     font-size: 15px;
     line-height: 107%;
     color: #46a358;
@@ -448,7 +433,6 @@ main {
 
 .catalog_second_block_head p {
     font-family: 'cera_round_pro_demoregular';
-    font-weight: 400;
     font-size: 15px;
     line-height: 107%;
     color: #3d3d3d;
@@ -463,19 +447,28 @@ main {
     height: 16px;
     content: "";
     margin-left: 5px;
+    background-repeat: no-repeat;
 }
 
 .cards_of_items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 33px;
-    margin-bottom: 0;
+    margin-top: 31px;
+}
+
+.cards_of_items article a {
+    text-decoration: none;
 }
 
 .cards_of_items article {
     width: 258px;
     height: 350px;
+    border-top: 1px solid transparent;
+}
+
+.cards_of_items article:hover {
+    border-top: 1px solid #46a358;;
 }
 
 .cards_of_items article div {
@@ -488,16 +481,24 @@ main {
 
 .cards_of_items article p:first-of-type {
     font-family: 'cera_round_pro_demoregular';
-    font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: #3d3d3d;
     margin: 12px 0 6px 0;
 }
 
+.cards_of_items article img {
+    width: 250px;
+    height: 250px;
+}
+
+.cards_of_items article img[src='images/beach_spider_lily.png'] {
+    width: 224px;
+    height: 286px;
+}
+
 .cards_of_items article p:nth-of-type(2) {
     font-family: 'cera_round_pro_demobold';
-    font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #46a358;
@@ -533,10 +534,32 @@ main {
     background: #46a358;
 }
 
-/*убрать font-weight у штрифтов*/
+.catalog_second_block_links li:last-of-type a {
+    background-image: url("../images/Arrow_Right_2.svg");
+    display: inline-flex;
+    content: "";
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 8px 8px 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.catalog_second_block_links li:last-of-type:hover a {
+    background-image: url("../images/Arrow_Right_2_white.svg");
+    display: inline-flex;
+    content: "";
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 8px 8px 8px;
+    width: 18px;
+    height: 18px;
+}
+
 .catalog_second_block_links li * {
     font-family: 'cera_round_pro_demolight';
-    font-weight: 300;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
@@ -545,20 +568,13 @@ main {
 
 .catalog_second_block_links li:hover * {
     font-family: 'cera_round_pro_demobold';
-    font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #fff;
 }
 
-.catalog_second_block_links li img {
-    max-width: 16px;
-    max-height: 16px;
-    vertical-align: middle;
 
-}
-
-.container_third_section {
+.container_summer_collection_section {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -566,16 +582,21 @@ main {
     gap: 28px;
 }
 
-.container_third_section article {
+.container_summer_collection_section article {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 586px;
     text-align: right;
     background: #fbfbfb;
+    height: 250px;
 }
 
-.container_third_section h3 {
+.container_summer_collection_section article div {
+    margin-right: 30px;
+}
+
+.container_summer_collection_section h3 {
     font-family: 'cera_round_pro_demoblack';
     font-size: 18px;
     line-height: 133%;
@@ -583,7 +604,7 @@ main {
     color: #3d3d3d;
 }
 
-.container_third_section p {
+.container_summer_collection_section p {
     font-family: 'cera_round_pro_demoregular';
     font-size: 14px;
     line-height: 171%;
@@ -592,7 +613,7 @@ main {
     margin: 9px 0 25px 0;
 }
 
-.container_third_section a {
+.container_summer_collection_section a {
     border-radius: 6px;
     width: 140px;
     height: 40px;
@@ -601,8 +622,108 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
 }
 
-.container_third_section a:after {
+.container_summer_collection_section a:after {
+    background-image: url("../images/Arrow_Right.svg");
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
 
+.container_summer_collection_section article img {
+    position: relative;
+    top: -45px;
+}
+
+.container_blog_section {
+    margin: 138px auto auto;
+    max-width: 1200px;
+}
+
+.container_blog_section h2:first-of-type {
+    text-align: center;
+    font-family: 'cera_round_pro_demobold';
+    font-size: 30px;
+    line-height: 53%;
+    text-align: center;
+    color: #3d3d3d;
+
+}
+
+.text_our_blog_posts {
+    text-align: center;
+    font-family: 'cera_round_pro_demoregular';
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #727272;
+    margin: 15px 0 35px 0;
+}
+
+.articles_blog_section {
+    display: flex;
+    gap: 44px;
+}
+
+.articles_blog_section article {
+    background: #fbfbfb;
+}
+
+.articles_blog_section article div {
+    padding: 9px 11px 12px 15px;
+}
+
+.articles_blog_section article div p:first-of-type {
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+}
+
+.articles_blog_section article div h3:first-of-type {
+    font-family: 'cera_round_pro_demobold';
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    margin: 4px 0;
+}
+
+.articles_blog_section article div p:nth-of-type(2) {
+    font-family: 'cera_round_pro_demoregular';
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+.articles_blog_section article div a {
+    text-decoration: none;
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    margin-top: 9px;
+}
+
+.articles_blog_section article div a:after {
+    background-image: url("../images/Arrow_right_straight.svg");
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    position: absolute;
+    margin-top: 2px;
 }
