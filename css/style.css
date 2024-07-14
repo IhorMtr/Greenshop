@@ -719,6 +719,13 @@ main {
     margin-top: 9px;
 }
 
+.articles_blog_section article div a:hover {
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+}
+
 .articles_blog_section article div a:after {
     background-image: url("../images/Arrow_right_straight.svg");
     display: inline-flex;
@@ -732,3 +739,18 @@ main {
     position: absolute;
     margin-top: 2px;
 }
+
+.articles_blog_section article div a:hover:after {
+    background-image: url("../images/Arrow_right_straight_green.svg");
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    position: absolute;
+    margin-top: 2px;
+}
+
