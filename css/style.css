@@ -213,7 +213,7 @@
     background-repeat: no-repeat;
 }
 
-header .container_header {
+.container_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -223,12 +223,68 @@ header {
     padding-top: 31px;
 }
 
-header ul {
+.links_nav_ul {
     display: flex;
     align-items: center;
+    gap: 50px;
+    position: relative;
 }
 
-.links_nav_ul * {
+.drop_down_ul_first {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    position: absolute;
+    bottom: -120px;
+    background: #edf6ee;
+    left: calc(50% - 44px);
+    height: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.drop_down_ul_first li {
+    text-align: left;
+    min-width: 188px;
+}
+
+.parental_li_drop_down a.links_nav_a:hover + .drop_down_ul_first {
+    opacity: 1;
+    height: auto;
+}
+
+.drop_down_ul_first li a {
+    font-family: 'cera_round_pro_demoregular';
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.drop_down_ul_first li a {
+    padding-left: 14px;
+}
+
+.drop_down_ul_first > li:first-of-type > a {
+    padding-top: 7px;
+}
+
+.drop_down_ul_first li:hover {
+    background: #1a712a;
+}
+
+.drop_down_ul_first li:hover a {
+    font-family: 'cera_round_pro_demobold';
+    font-size: 16px;
+    color: #fff;
+}
+
+.drop_down_ul_first li {
+    font-family: 'cera_round_pro_demobold';
+    font-size: 16px;
+    color: #fff;
+}
+
+.links_nav_a {
     font-family: 'cera_round_pro_demoregular';
     font-size: 16px;
     color: #3d3d3d;
@@ -236,33 +292,29 @@ header ul {
     text-align: center;
 }
 
-.links_nav_ul li:first-of-type {
-    min-width: 45px;
-}
-
-.links_nav_ul li:nth-of-type(2) {
-    min-width: 38px;
-}
-
-.links_nav_ul li:nth-of-type(3) {
-    min-width: 79px;
-}
-
-.links_nav_ul li:nth-of-type(4) {
-    min-width: 42px;
-}
-
-
-.links_nav_ul *:hover {
-    transition: 0.2s;
+.links_nav_a:hover {
+    transition: 0.4s;
     color: #3d3d3d;
     font-family: 'cera_round_pro_demobold';
 }
 
 
-.links_nav_ul {
-    gap: 50px;
+.links_nav_ul > li:first-of-type {
+    min-width: 45px;
 }
+
+.links_nav_ul > li:nth-of-type(2) {
+    min-width: 38px;
+}
+
+.links_nav_ul > li:nth-of-type(3) {
+    min-width: 79px;
+}
+
+.links_nav_ul > li:nth-of-type(4) {
+    min-width: 42px;
+}
+
 
 main {
     max-width: 1200px;
