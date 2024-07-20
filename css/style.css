@@ -1125,7 +1125,7 @@ main {
     display: flex;
     background: #fbfbfb;
     margin: auto;
-    padding: 33px 155px 0 25px;
+    padding: 33px 155px 27px 25px;
     justify-content: space-between;
     border-bottom: 1px solid rgba(70, 163, 88, 0.2);
 }
@@ -1236,7 +1236,6 @@ main {
     color: #3d3d3d;
     margin-bottom: 13px;
 }
-
 
 .rights_reserved {
     font-family: 'cera_round_pro_demoregular';
