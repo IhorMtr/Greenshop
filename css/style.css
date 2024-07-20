@@ -1036,7 +1036,6 @@ main {
     background: #46a358;
 }
 
-
 .contacts_part_container_pre_footer {
     background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
     display: flex;
@@ -1045,16 +1044,14 @@ main {
     padding: 25px 22px 20px 23px;
 }
 
-
-.contacts_part_container_pre_footer p {
+.pre_footer_address {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'cera_round_pro_demoregular';
     font-size: 14px;
     line-height: 157%;
     color: #3d3d3d;
-}
-
-.pre_footer_address {
-    display: flex;
 }
 
 .pre_footer_address:before {
@@ -1066,7 +1063,21 @@ main {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 13px;
+    margin-right: 9px;
+    margin-bottom: 5px;
+}
+
+.pre_footer_phone:before {
+    content: "";
+    background-image: url("../images/Calling.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 5px;
 }
 
 .pre_footer_phone {
@@ -1075,6 +1086,9 @@ main {
     font-size: 14px;
     line-height: 157%;
     color: #3d3d3d;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pre_footer_email {
@@ -1083,6 +1097,9 @@ main {
     font-size: 14px;
     line-height: 157%;
     color: #3d3d3d;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pre_footer_email:before {
@@ -1090,24 +1107,131 @@ main {
     background-image: url("../images/Message.svg");
     width: 20px;
     height: 20px;
-    display: inline-flex;
     background-repeat: no-repeat;
-    position: absolute;
-    left: -28px;
-}
-
-.pre_footer_phone:before {
-    content: "";
-    background-image: url("../images/Calling.svg");
-    width: 20px;
-    height: 20px;
     display: inline-flex;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -28px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .contacts_part_container_pre_footer img[src='images/logo.svg'] {
     width: 150px;
     height: 34px;
+}
+
+.footer_container {
+    max-width: 1200px;
+    display: flex;
+    background: #fbfbfb;
+    margin: auto;
+    padding: 33px 155px 0 25px;
+    justify-content: space-between;
+}
+
+.footer_container a {
+    text-decoration: none;
+}
+
+.footer_my_account h3, .footer_help_guide h3, .footer_categories h3 {
+    font-family: 'cera_round_pro_demobold';
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 8px;
+}
+
+
+.footer_my_account a, .footer_help_guide a, .footer_categories a {
+    font-family: 'cera_round_pro_demoregular';
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+}
+
+.footer_my_account ul, .footer_help_guide ul, .footer_categories ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_social h3 {
+    font-family: 'cera_round_pro_demobold';
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.footer_social ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-width: 190px;
+    height: 30px;
+}
+
+.footer_social ul li {
+    border: 1px solid rgba(70, 163, 88, 0.2);
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer_social ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_social ul li:first-of-type a {
+    content: "";
+    background-image: url("../images/Facebook.svg");
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+}
+
+.footer_social ul li:nth-of-type(2) a {
+    content: "";
+    background-image: url("../images/Instagram.svg");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.footer_social ul li:nth-of-type(3) a {
+    content: "";
+    background-image: url("../images/Twitter.svg");
+    width: 16px;
+    height: 13px;
+    display: inline-block;
+}
+
+.footer_social ul li:nth-of-type(4) a {
+    content: "";
+    background-image: url("../images/Linkedin.svg");
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+}
+
+.footer_social ul li:last-of-type a {
+    content: "";
+    background-image: url("../images/Youtube.svg");
+    width: 19px;
+    height: 14px;
+    display: inline-block;
+}
+
+.footer_payment {
+    margin-top: 33px;
+}
+
+.footer_payment h3 {
+    font-family: 'cera_round_pro_demobold';
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 13px;
 }
