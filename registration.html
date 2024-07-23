@@ -13,29 +13,25 @@
 <body>
 <form name="login-register" method="post" action="">
     <div class="modal">
-        <div>
-            <a href="#"> <img src="images/cross.svg" alt="cross"> </a>
+        <a href="#" class="close_button"><img src="images/cross.svg" alt="cross"></a>
+        <div class="reg_login_links">
+            <a href="#">Login</a>
+            <p>|</p>
+            <a href="#" class="reg_title">Register</a>
         </div>
-        <div>
-            <p>Login | <span class="span_reg_title">Register</span></p>
+        <div class="registration_inputs">
             <p class="text_reg">Enter your email and password to register.</p>
-        </div>
-        <div>
-            <input name="user_name" type="text" placeholder="Username" id="user_name" class="input_registration">
-        </div>
-        <div>
-            <input name="email" type="email" placeholder="Enter your email address" id="email" class="input_registration">
-        </div>
-        <div>
-            <input name="password" type="password" placeholder="Password" id="password" class="input_registration">
-        </div>
-        <div>
-            <input name="confirmPassword" type="password" placeholder="Confirm Password" id="confirmPassword" class="input_registration">
+            <input name="user_name" type="text" placeholder="Username" id="user_name">
+            <input name="email" type="email" placeholder="Enter your email address" id="email">
+            <input name="password" type="password" placeholder="Password" id="password">
+            <input name="confirmPassword" type="password" placeholder="Confirm Password" id="confirmPassword">
         </div>
         <button type="submit" class="button_reg">Register</button>
-        <div class="reg_title"><p>Or register with</p></div>
-        <a href="#" class="login_links registration_a"><img src="images/googleIcon.svg" alt="googleIcon" class="chrome_logo">Continue with Google</a>
-        <a href="#" class="login_links registration_a"><img src="images/facebookIcon.svg" alt="facebookIcon" class="facebook_logo" >Continue with Facebook</a>
+        <p class="or_reg_title">Or register with</p>
+        <div class="login_links_services">
+            <a href="#" class="login_google">Continue with Google</a>
+            <a href="#" class="login_facebook">Continue with Facebook</a>
+        </div>
     </div>
 </form>
 </body>

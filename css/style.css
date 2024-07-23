@@ -83,101 +83,176 @@
     box-sizing: border-box;
 }
 
-.input_registration {
-    width: 300px;
-    height: 40px;
-    margin-top: 16px;
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding: 12px 14px;
-
+.modal {
+    max-width: 500px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    border-bottom: 10px solid #46a358;
 }
 
-.input_registration::placeholder {
-    font-family: "Cera Pro", sans-serif;
-    font-size: 14px;
-    line-height: 114%;
-    color: #a5a5a5;
+.close_button {
+    align-self: flex-end;
+    margin-top: 13px;
 }
 
-.registration_a {
-    font-family: "Cera Pro", sans-serif;
-    font-size: 13px;
-    line-height: 123%;
-    color: #727272;
-    text-align: center;
+
+.reg_login_links {
+    display: flex;
+    gap: 11px;
+    margin-top: 21px;
+}
+
+.reg_login_links a:first-child {
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 20px;
+    line-height: 80%;
+    color: #3d3d3d;
     text-decoration: none;
 }
 
-.login_links {
-    width: 300px;
-    height: 40px;
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.login_links:first-of-type {
-    margin-top: 27px;
-    margin-bottom: 15px;
+.reg_login_links p {
+    font-family: 'cera_round_pro_demothin';
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
 }
 
 .reg_title {
-    font-family: "Cera Pro", sans-serif;
-    font-size: 13px;
-    line-height: 123%;
-    color: #3d3d3d;
-    margin-top: 36px;
-    margin-bottom: 27px;
-    margin-left: 100px;
-}
-
-.span_reg_title {
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 20px;
+    line-height: 80%;
     color: #46a358;
-}
-
-.button_reg {
-    background-color: #46a358;
-    color: white;
-    border-radius: 5px;
-    width: 300px;
-    height: 45px;
-    margin-top: 41px;
-    text-align: center;
-}
-
-.button_reg:hover {
-    transition: 0.5s;
-    background-color: #55B267;
-}
-
-.modal {
-    max-width: 500px;
-    margin: auto;
-    padding: 52px 100px 40px;
-
+    text-decoration: none;
 }
 
 .text_reg {
-    margin-top: 40px;
-    margin-bottom: 14px;
+    font-family: 'cera_round_pro_demoregular';
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
 }
 
-.chrome_logo {
+.registration_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 40px 0 41px 0;
+}
+
+.registration_inputs input {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+
+.registration_inputs input::placeholder {
+    font-family: 'cera_round_pro_demoregular';
+    font-size: 14px;
+    line-height: 114%;
+    color: #a5a5a5;
+    padding: 12px 0 12px 14px;
+}
+
+#password:after{
+    content: "";
+    background-image: url("../images/Hide.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.button_reg {
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    background: #46a358;
+    font-family: 'cera_round_pro_demobold';
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    border: 0;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+
+.or_reg_title {
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.or_reg_title:before {
+    content: "";
+    display: inline-block;
+    width: 97px;
+    height: 1px;
+    background: #eaeaea;
+}
+
+.or_reg_title:after {
+    content: "";
+    display: inline-block;
+    width: 97px;
+    height: 1px;
+    background: #eaeaea;
+}
+
+.login_links_services {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.login_links_services a {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'cera_round_pro_demomedium';
+    font-size: 13px;
+    line-height: 123%;
+    text-align: center;
+    color: #727272;
+}
+
+.login_google:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/googleIcon.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
     margin-right: 9px;
-    height: 20px;
-    width: 20px;
+    margin-bottom: 3px;
 }
 
-.facebook_logo {
-    margin-right: 4px;
+.login_facebook:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/facebookIcon.svg");
+    background-repeat: no-repeat;
+    width: 10px;
     height: 20px;
-    width: 20px;
+    margin-right: 4px;
+    margin-bottom: 2px;
 }
 
 .container_header {
@@ -185,7 +260,6 @@
     margin: auto;
     border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
     padding-bottom: 18px;
-
 }
 
 .login_link_index {
@@ -1034,6 +1108,7 @@ main {
     width: 85px;
     height: 40px;
     background: #46a358;
+    cursor: pointer;
 }
 
 .contacts_part_container_pre_footer {
