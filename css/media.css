@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1025px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .articles_blog_section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .first_section .container {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .catalog_second_block_head {
+        flex-direction: column;
+    }
+
+    .catalog_second_block_head div ul li {
+        min-width: 0;
+    }
+
+    .catalog_second_block_head p {
+        margin-top: 10px;
+    }
+
+    .catalog_second_block_links {
+        margin-left: 0;
+        margin-right: 200px;
+    }
+
+    .summer_collection .container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .pre_footer .container article:last-of-type {
+        margin-right: 40px;
+    }
+
+    .pre_footer .container article:first-of-type:after,
+    .pre_footer .container article:nth-of-type(2):after {
+        left: 20%;
+    }
+
+    .contacts_part_pre_footer .container {
+        gap: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 821px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .contacts_part_pre_footer .container {
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .first_section .container > div:last-of-type {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .first_section .container {
+        display: block;
+    }
+
+    .pre_footer .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pre_footer .container article:first-of-type,
+    .pre_footer .container article:nth-of-type(2),
+    .pre_footer .container article:last-of-type {
+        margin: 0 0 24px 0;
+    }
+
+    .pre_footer .container article:first-of-type:after,
+    .pre_footer .container article:nth-of-type(2):after {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+
+    .pre_footer_address {
+        width: 200px;
+    }
+
+    .pre_footer_address:before {
+        width: 30px;
+    }
+
+    .pre_footer_email:before,
+    .pre_footer_phone:before {
+        width: 22px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .catalog .container{
+        gap: 25px;
+    }
+}
