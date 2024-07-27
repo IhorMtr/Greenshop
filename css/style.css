@@ -157,14 +157,14 @@
     padding: 12px 0 12px 14px;
 }
 
-#password:after {
-    content: "";
-    background-image: url("../images/Hide.svg");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
+#password + a {
+    position: relative;
+}
+
+#password + a img {
     position: absolute;
+    left: -30px;
+    top: -1px;
 }
 
 .button_reg {
