@@ -153,6 +153,12 @@
         flex-direction: row;
     }
 
+    .articles_blog_section article {
+        background: #fbfbfb;
+        width: auto;
+        height: 362px;
+    }
+
 }
 
 @media only screen and (max-width: 431px) {
@@ -261,6 +267,10 @@
         justify-content: center;
     }
 
+    .pre_footer .container article p, .pre_footer .container article h3 {
+        text-align: center;
+    }
+
     .summer_collection .container article div {
         margin-right: 15px;
     }
@@ -268,6 +278,7 @@
     .summer_collection .container h3, .summer_collection .container p {
         text-align: center;
     }
+
 
     .articles_blog_section article {
         background: #fbfbfb;
