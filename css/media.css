@@ -157,7 +157,23 @@
 
 @media only screen and (max-width: 431px) {
     .main_picture img[src='images/Flowers.png'] {
-        width: 420px;
+        width: 100%;
+    }
+
+    .main_picture {
+        width: 410px;
+    }
+
+    .summer_collection .container a {
+        width: 120px;
+    }
+
+    .summer_collection .container p {
+        margin-bottom: 10px;
+    }
+
+    .summer_collection .container article {
+        height: auto;
     }
 
     nav {
@@ -190,9 +206,6 @@
         margin: 20px 0 0 0;
     }
 
-    .main_picture {
-        width: 430px;
-    }
 
     .catalog .container {
         flex-direction: column;
