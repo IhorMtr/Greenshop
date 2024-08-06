@@ -1387,5 +1387,8 @@ footer .container a {
     }
 }
 
+.nav-but-wrap {
+    display: none;
+}
 
 
