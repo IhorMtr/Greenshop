@@ -17,7 +17,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 
-})
+});
 
 
 
